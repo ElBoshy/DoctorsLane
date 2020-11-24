@@ -8,6 +8,8 @@ use App\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class RegisterController extends Controller
 {
@@ -47,7 +49,7 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \Illuminate\Contracts\Validation\Validator
      */
-    protected function validator(array $data)
+    protected function validator(Request $data)
     {
         return Validator::make($data, [
             'username' => ['required', 'string', 'max:255'],
@@ -62,12 +64,15 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\User
      */
-    protected function create(array $data)
+    protected function register(Request $data)
     {
-        return User::create([
-            'username' => $data['username'],
+         User::create([
+            'username' => $data->username,
             'role_id'  => 3,
-            'password' => Hash::make($data['password']),
+            'password' => Hash::make($data->password),
         ]);
+
+        Auth::login(User::where('username', $data->username)->first());
+        return redirect()->intended('index');
     }
 }

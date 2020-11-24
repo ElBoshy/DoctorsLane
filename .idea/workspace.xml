@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59e58bf5-cf11-43a0-8330-5ba94cd492fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/doctorslane.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/doctorslane.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CpanelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CpanelController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +185,9 @@
       <workItem from="1584021055680" duration="32727000" />
       <workItem from="1584192182127" duration="451000" />
       <workItem from="1586030434233" duration="102000" />
-      <workItem from="1605898679775" duration="2629000" />
+      <workItem from="1605898679775" duration="3577000" />
+      <workItem from="1606226424981" duration="67000" />
+      <workItem from="1606242676048" duration="3074000" />
     </task>
     <servers />
   </component>
@@ -204,6 +204,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1606242767285">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1606242767285" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1605902005436">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

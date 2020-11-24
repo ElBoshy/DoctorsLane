@@ -32,6 +32,3 @@ Route::prefix('cpanel')->name('cpanel.')->group(function () {
 });
 
 
-
-
-

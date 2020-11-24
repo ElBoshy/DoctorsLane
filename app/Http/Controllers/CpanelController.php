@@ -70,6 +70,11 @@ class CpanelController extends Controller
 
     public function sendNotificationPost(SendNotificationPost $request)
     {
+        $appoint=new Appointment();
+        $appoint->patient_id = $request->patient_id;
+        $appoint->doctor_id = $request->doctor_id;
+        $appoint->date = $request->date;
+        $appoint->save();
         $validated = $request->validated();
         $appointment = Appointment::where('patient_id', '=', $validated['patient_id'])->first();
         $doctor = User::find($validated['doctor_id']) ;
